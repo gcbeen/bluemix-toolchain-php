@@ -1,8 +1,8 @@
 ---
 applications: 
-- name: myapp-dev-[initials]
+- name: myapp-dev-gcb
 memory: 256M
 instances: 1
-host: myapp-dev-[initials]
+host: myapp-dev-gcb
 buildpack: https://github.com/cloudfoundry/php-buildpack.git
 stack: cflinuxfs2

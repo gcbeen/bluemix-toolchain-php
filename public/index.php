@@ -23,7 +23,7 @@ $app->get('/info', function (Request $request, Response $response) {
  
 // "hello world" controller
 
-$app->get('/hello[/{name}]', function (Request $request, Response $response) {
+$app->get('/helloooo[/{name}]', function (Request $request, Response $response) {
     $name = $request->getAttribute('name');
     if ($name) {
       $processedName = $this->processor->process($name);
