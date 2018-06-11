@@ -23,11 +23,11 @@ $app->get('/info', function (Request $request, Response $response) {
  
 // "hello world" controller
 
-$app->get('/helloooo[/{name}]', function (Request $request, Response $response) {
+$app->get('/hello[/{name}]', function (Request $request, Response $response) {
     $name = $request->getAttribute('name');
     if ($name) {
       $processedName = $this->processor->process($name);
-      $response->getBody()->write("Hello, $processedName!");
+      $response->getBody()->write("Helloooo, $processedName!");
     } else {
       $response->getBody()->write("Sorry, we haven't been introduced yet.");
     }
